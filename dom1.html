@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let p = document.createElement('p');  // Create a <p> element
+        p.innerHTML = "Hello World";  // Set text
+        p.style.color = "red";  // Set text color
+        p.style.fontSize = "20px";  // Set font size
+        
+        document.body.append(p);
+
+        let btn=document.createElement("button");
+        btn.innerText="Click Me";
+        btn.style.backgroundColor="red";
+        document.body.append(btn)
+        btn.addEventListener('click',()=>{
+            alert("Hello World")
+        })
+
+        p.before(btn);
+        // p.prepend(btn);
+        
+       
+    </script>
+</body>
+</html>

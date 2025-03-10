@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <button id="btn1">click me</button>
+    <script>
+
+        let div=document.querySelector('div');
+        div.style.backgroundColor="black";
+        div.style.height="100px";
+        div.style.width="100px";
+        div.style.marginBottom="100px";
+
+    // Button properties
+        let button=document.getElementById('btn1');
+         button.innerHTML="Clicked";
+        button.style.backgroundColor="red";
+        button.addEventListener('click',()=>{
+            alert("Hello World")
+        })
+        button.style.color="white";
+        button.style.fontSize="20px";
+
+
+        div.append(btn1);
+        // div.prepend(btn1);
+        // div.before(btn1);       
+        // div.after(btn1);
+        // div.replaceWith(btn1);
+
+
+        
+
+
+
+    </script>
+
+       
+</body>
+</html>
